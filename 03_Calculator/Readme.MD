@@ -3,8 +3,5 @@ To create a basic calculator using CSS, HTML, and JavaScript, you'll need to imp
 
 Website Link: https://simplycalcy.netlify.app/
 
-Video: 
-https://github.com/YashChavanWeb/CodeSoft-Projects/assets/112185595/fc5997e1-9d8e-41ef-9a04-367a70631abc
-
 
 
