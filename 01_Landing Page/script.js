@@ -15,34 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Section: Navbar Color and Page Load Check
-document.addEventListener('DOMContentLoaded', function () {
-    const navbar = document.getElementById('navbar');
-    const originalNavbarColor = getComputedStyle(navbar).backgroundColor;
-
-    if (window.scrollY === 0) {
-        navbar.style.backgroundColor = originalNavbarColor;
-    }
-
-    // Add the 'loaded' class to the #contact section
-    document.getElementById('contact').classList.add('loaded');
-
-    function addLoadedClass() {
-        document.getElementById('contact').classList.add('loaded');
-    }
-
-    var contactButton = document.querySelector('nav a[href="#contact"]');
-    contactButton.addEventListener('click', addLoadedClass);
-
-    if (window.location.hash === '#contact') {
-        addLoadedClass();
-    }
-});
-
-
-
-
-
 
 // Section: Carousel Functionality
 document.addEventListener('DOMContentLoaded', function () {
@@ -69,30 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
-
-
-
-
-// Section: Swipe-Up Button Interaction
-document.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector('.container');
-    const pictureTextPairs = container.querySelectorAll('.picture, .text');
-    const button = document.querySelector('.swipe-up');
-    let currentIndex = 0;
-
-    pictureTextPairs.forEach((pair, index) => {
-        if (index !== currentIndex) {
-            pair.style.display = 'none';
-        }
-    });
-
-    button.addEventListener('click', function () {
-        pictureTextPairs[currentIndex].style.display = 'none';
-        currentIndex = (currentIndex + 2) % pictureTextPairs.length;
-        pictureTextPairs[currentIndex].style.display = 'block';
-    });
-});
 
 
 
